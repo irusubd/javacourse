@@ -19,11 +19,13 @@ public class TestSavingsAccount {
 			cont.withdraw(amount);
 			System.out.println("Please take your money!");
 			System.out.println("Your new balance is: " + cont.balance);
-			System.out.println("Thank you for using our ATM!");
+
 		} catch (Exception e) {
 			System.out.println("The amount you entered is greater than the available balance: " + cont.balance);
-			System.out.println("Thank you for using our ATM!");
+			System.out.println(e);
 		}
+		
+		System.out.println("Thank you for using our ATM!");
 
 	}
 
